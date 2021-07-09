@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="quiz_app_stylesheet.css">
+    <title>The Quiz App</title>
+  </head>
+  <body>
+    <!-- start quix button -->
+    <div class = "start-quiz-button">
+      <button type="button" name="button">Start Quiz</button>
+    </div>
+    <!-- quiz info section -->
+    <div class = "quiz-info-box">
+      <div class="info-title">
+        <span>Some rules of the quiz</span>
+      </div>
+      <div class="info-list">
+        <div class = "info">1) You will have <span class="time-limit">15 seconds</span> for each question.</div>
+        <div class = "info">2) Once you select an option,you cannot change it.</div>
+        <div class = "info">3) You can't select any option once the timer goes off.</div>
+        <div class = "info">4) You can't quit the quiz while you're playing.</div>
+        <div class = "info">5) You will get points on the basis of correct answers.</div>
+      </div>
+      <div class="buttons">
+        <button class="start">Continue</button>
+        <button class="quit">Exit Quiz</button>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <header>
+        <div class = "title">Question </div>
+        <div class="timer">
+          <div class = "time-text">Time Left</div>
+          <div class = "timer-sec">15</div>
+        </div>
+      </header>
+      <div class="timer-bar"></div>
+      <div class="question-text">
+        <!-- <span>1.What does HTML Stand for ?</span> -->
+      </div>
+      <div class="options-list">
+        <!-- <div class="option">
+          <span>Hyper Text Markup Language</span>
+        </div>
+        <div class="option">
+          <span>Hyper Transfer Markup Language</span>
+        </div>
+        <div class="option">
+          <span>Hyperactive Text Markup Language</span>
+        </div>
+        <div class="option">
+          <span>Hyper Text preprocessor Language</span>
+        </div> -->
+      </div>
+      <footer>
+        <div class="no-of-questions">
+          <!-- <span><cite>1</cite> of <cite>5</cite> questions</span> -->
+        </div>
+        <button class="next-button">Next Question</button>
+      </footer>
+    </div>
+    <div class="result-box">
+      <div class="crown-icon">
+        <img src="/Users/hsjhinkwan/Desktop/Web development work/quiz_app/crown-1.jpeg" alt="image-cannot-be-displayed">
+      </div>
+      <div class="complete-text">You have completed the Quiz!</div>
+      <div class="score-text">
+        <!-- <span> and Sorry, You get only <cite> 2 </cite> out of <cite> 5</cite> marks</span> -->
+      </div>
+      <div class="result-box-buttons">
+        <button class="replay-quiz">Replay Quiz</button>
+        <button class="quit-quiz">Quit Quiz</button>
+      </div>
+    </div>
+  </body>
+  <script src = "quiz_app_javascript.js"></script>
+  <script src = "quiz_app_questions.js"></script>
+</html>

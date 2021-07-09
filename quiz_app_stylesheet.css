@@ -1,0 +1,264 @@
+body
+{
+  background-color: blue;
+}
+
+.start-quiz-button
+{
+  position:relative;
+  top:300px;
+  left:650px;
+}
+.quiz-info-box
+{
+  position:relative;
+  top:100px;
+  left:550px;
+  display:none;
+}
+.start-quiz-button button
+{
+  font-size: 20px;
+  padding:20px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.quiz-info-box
+{
+  background-color: white;
+  width:400px;
+  border-radius: 5px;
+}
+.info-title
+{
+  height:60px;
+  border-bottom: 1px solid lightgrey;
+  display:flex;
+  align-items: center;
+  padding-left: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.info-list
+{
+  padding:10px;
+}
+.info
+{
+  font-size: 20px;
+  margin:10px;
+}
+.time-limit
+{
+  color:red;
+}
+
+.quiz-info-box .buttons
+{
+  display:flex;
+  padding:15px;
+  justify-content: flex-end;
+  border-top: 1px solid lightgrey;
+}
+.quiz-info-box .buttons button
+{
+  margin: 0 10px;
+  height:40px;
+  width:100px;
+  background-color: blue;
+  color:white;
+  font-weight: 600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.buttons button:hover
+{
+  background-color: white;
+  border:2px solid blue;
+  color:blue;
+}
+
+.quiz-box
+{
+  position:relative;
+  top:100px;
+  left:470px;
+  width:550px;
+  height:470px;
+  background-color: white;
+  border-radius:5px;
+  border:3px solid black;
+  display:none;
+}
+.quiz-box .title
+{
+  font-size:30px;
+  font-weight:600;
+}
+.quiz-box .timer
+{
+  display:flex;
+  justify-content: space-between;
+  background-color:rgb(181,220,255);
+  width:108px;
+  height:23px;
+  padding:5px;
+  border-radius: 5px;
+  padding-left:7px;
+}
+.quiz-box header
+{
+  height:30px;
+  display:flex;
+  padding:5px;
+  justify-content: space-between;
+  /* border-bottom: 4px solid lightgrey; */
+  padding:15px 50px;
+}
+.timer-bar
+{
+  height:5px;
+  width:550px;
+  background-color: blue;
+  animation-name:timekeeper;
+  animation-duration: 17s;
+  animation-fill-mode: forwards;
+}
+@keyframes timekeeper {
+  from {width:0%;}
+  to {width:100%; background-color: blue;}
+}
+.quiz-box .timer .time-text
+{
+  font-weight:600;
+  padding-top:3px;
+}
+.quiz-box .timer .timer-sec
+{
+  color:white;
+  background-color: black;
+  font-weight:500;
+  height:20px;
+  width:30px;
+  padding:2px;
+  text-align: center;
+  border-radius: 3px;
+}
+.quiz-box .question-text
+{
+  font-size:25px;
+  font-weight:600;
+  padding:20px;
+}
+.quiz-box .options-list
+{
+  padding-left:20px;
+  display:flex;
+  flex-direction: column;
+}
+.quiz-box .options-list .option
+{
+  padding:15px;
+  margin:5px;
+  width:460px;
+  border-radius:5px;
+  background-color: rgb(181,220,255,0.5);
+}
+.quiz-box .options-list .option:hover
+{
+  background-color: rgb(181,220,255);
+  cursor:pointer;
+}
+.quiz-box .options-list .option span
+{
+  font-size: 20px;
+}
+
+footer
+{
+  margin-top:10px;
+  padding-top:15px;
+  padding-left:15px;
+  display:flex;
+  justify-content: space-between;
+  border-top: 2px solid lightgrey;
+}
+
+footer .no-of-questions
+{
+  font-size:20px;
+  margin-top:15px;
+}
+footer button
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  color:white;
+  background-color: blue;
+  padding:5px;
+  margin-right:40px;
+  border-radius:5px;
+  display:none;
+}
+
+.result-box
+{
+  background-color: white;
+  width:400px;
+  position:relative;
+  left:500px;
+  top:100px;
+  border-radius: 5px;
+  border:3px solid black;
+  display:none;
+}
+.result-box .crown-icon
+{
+  margin:20px 0px 5px 120px;
+}
+.result-box .crown-icon img
+{
+  width:150px;
+  height:150px;
+}
+.result-box .complete-text
+{
+  margin:0px 0px 20px 50px;
+  font-size:23px;
+  font-weight:600;
+}
+.result-box .score-text span
+{
+  display:flex;
+  padding-left:50px;
+  font-size:20px;
+}
+.result-box .score-text span cite
+{
+  padding-left:3px;
+  padding-right: 3px;
+}
+.result-box .result-box-buttons
+{
+  padding:20px;
+}
+.result-box .result-box-buttons button
+{
+  height:50px;
+  width:140px;
+  margin-left:30px;
+  border-radius: 3px;
+  border:2px solid blue;
+  background-color: rgb(240,240,240);
+  color:blue;
+  font-size:20px;
+  cursor:pointer;
+}
+.result-box .result-box-buttons button:hover
+{
+  color:white;
+  background-color: rgb(0,155,255);
+}
